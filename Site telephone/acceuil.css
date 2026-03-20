@@ -7,10 +7,10 @@ header{
 background-color: white;
 color: black;
 }
-.header{
-
-    
+body {
+    font-family: 'Inter', sans-serif;
 }
+
 
 .carousel {
   width: 400px;
@@ -29,3 +29,21 @@ color: black;
   object-fit: cover;
 }
 /*Remplis entièrement le conteneur*/
+
+
+
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    gap: 40px; /* espace entre les liens */
+}
+
+.menu a {
+    text-decoration: none; /* enlève le soulignement des liens */
+    font-weight: 600; /*met le texte en semi‑gras*/
+    color: black; /*change la couleur du texte*/
+}
