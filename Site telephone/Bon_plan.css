@@ -27,3 +27,17 @@ justify-content: center;
     margin-bottom: 8px;  /* espace entre le texte et l'image */
     display: block;      /* garantit qu'il reste au-dessus */
 }
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    gap: 40px; /* espace entre les liens */
+}
+
+.menu a {
+    text-decoration: none; /* enlève le soulignement des liens */
+    font-weight: 600; /*met le texte en semi‑gras*/
+    color: black; /*change la couleur du texte*/
