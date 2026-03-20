@@ -4,8 +4,8 @@
 #Nos_telephone
 
 header{
-background-color: white;
-color: black;
+    background-color: white;
+    color: black;
 }
 body {
     font-family: 'Inter', sans-serif;
@@ -26,7 +26,7 @@ body {
 .slides {
     display: flex;
     width: 400%; /* 4 images */
-   animation: defilement 20s infinite linear;  /* Cette ligne lance l’animation nommée defilement, dure 12 secondes, tourne en boucle et avance à vitesse constante.*/ 
+   animation: defilement 20ms infinite linear;  /* Cette ligne lance l’animation nommée defilement, dure 12 secondes, tourne en boucle et avance à vitesse constante.*/ 
 }
 
 .slides img {
@@ -52,6 +52,7 @@ body {
     display: flex;
     justify-content: center; /* centre horizontalement */
     gap: 40px; /* espace entre les liens */
+    margin-bottom: 20px; /* Permet de faire une marge dessous*/
 }
 
 .menu a {
