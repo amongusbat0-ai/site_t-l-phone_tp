@@ -13,22 +13,28 @@ body {
 
 
 .carousel {
-  width: 400px;
-  overflow: hidden; /* Permet de cacher le surplus de l image */  
-  margin: auto;
+    width: 100%;
+    overflow: hidden;
 }
 
 .slides {
-  display: flex;
-  transition: transform 0.5s ease;
+    display: flex;
+    width: 400%; /* 4 images */
+   animation: defilement 12s infinite linear;  /* Cette ligne lance l’animation nommée defilement, dure 12 secondes, tourne en boucle et avance à vitesse constante.*/ 
 }
-/* Permet au image de se mouvoir*/
+
 .slides img {
-  width: 400px;
-  height: 250px;
-  object-fit: cover;
+    width: 100%;
 }
-/*Remplis entièrement le conteneur*/
+
+@keyframes defilement {
+    0%   { transform: translateX(0); }
+    25%  { transform: translateX(-100%); }
+    50%  { transform: translateX(-200%); }
+    75%  { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
+/* Keyframe permet de faire defiler les image */
 
 
 
