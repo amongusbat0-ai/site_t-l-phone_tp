@@ -14,7 +14,7 @@ color: black;
 
 .carousel {
   width: 400px;
-  overflow: hidden;
+  overflow: hidden; /* Permet de cacher le surplus de l image */  
   margin: auto;
 }
 
@@ -22,10 +22,10 @@ color: black;
   display: flex;
   transition: transform 0.5s ease;
 }
-
+/* Permet au image de se mouvoir*/
 .slides img {
   width: 400px;
   height: 250px;
   object-fit: cover;
 }
-
+/*Remplis entièrement le conteneur*/
