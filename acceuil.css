@@ -45,7 +45,7 @@ body {
 
 
 .menu ul {
-    list-style: none;
+    list-style: none; /*sert à enlever les puces ou numéros des listes.*/
     padding: 0; /* Fait des espace pour le menu */
     margin: 0; /* Fait une marge*/
     display: flex;

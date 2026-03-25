@@ -2,7 +2,7 @@
 #Bon_plan
 #Nos_telephone
 
-body{
+body{ /* Sert a faire fonctionner la police custom */
     font-family: 'Inter', sans-serif;
 }
 
@@ -13,11 +13,11 @@ body{
 
 
 
-header{
+header{ /* Permet de mettre la couleur dans le fond de la partie head et la couleur principale */
 background-color: white;
 color: black;
 }
-.bonplan{
+.bonplan{ /*Transoforme le conteneur flexible et centre le contenu horizontalement */
  display: flex;
 justify-content: center;
 
@@ -29,9 +29,9 @@ justify-content: center;
 }
 
 .menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    list-style: none; /*sert à enlever les puces ou numéros des listes.*/
+    padding: 0; /* Fait des espace pour le menu */
+    margin: 0; /* Fait une marge*/
     display: flex;
     justify-content: center; /* centre horizontalement */
     gap: 40px; /* espace entre les liens */
