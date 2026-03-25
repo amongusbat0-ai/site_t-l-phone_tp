@@ -2,18 +2,18 @@
 #Bon_plan
 #Nos_telephone
 
-header{
+header{ /* Permet de mettre la couleur dans le fond de la partie head et la couleur principale */
     background-color: white;
     color: black;
 }
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif; /* Sert a faire fonctionner la police custom */
 }
 
 .menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    list-style: none; /*sert à enlever les puces ou numéros des listes.*/
+    padding: 0; /* Fait des espace pour le menu */
+    margin: 0; /* Fait une marge*/
     display: flex;
     justify-content: center; /* centre horizontalement */
     gap: 40px; /* espace entre les liens */
@@ -27,68 +27,67 @@ body {
 }
 
 .grille{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    grid-template-rows: 4fr 1fr ;
-    place-items: center;
+    display: grid; /* transforme le conteneur en grille pour organiser les éléments */
+    grid-template-columns: repeat(3, 1fr) ; /* crée 3 colonnes de largeur égale */
+    grid-template-rows: 4fr 1fr ; /* crée 2 lignes, la première 4× plus grande que la deuxième*/
+    place-items: center; /* centre tous les éléments horizontalement et verticalement dans chaque cellule */
 }
 
-img{
-    max-height: 400px;
-    width: auto;
-    box-shadow: 0 4px 8px;
-    padding: 15px;
-    border-radius: 15px;
+img {
+    max-height: 400px; /* limite la hauteur maximale des images à 400px */
+    width: auto; /* ajuste automatiquement la largeur pour garder les proportions */
+    box-shadow: 0 4px 8px; /* ajoute une ombre sous l’image */
+    padding: 15px; /* espace intérieur autour de l’image */
+    border-radius: 15px; /* arrondit les coins de l’image */
 }
 
-.photo1{
-    grid-column: 1/2;
-    grid-row: 1/2;
+.photo1 {
+    grid-column: 1/2; /* place la première image dans la première colonne */
+    grid-row: 1/2; /* place la première image dans la première ligne */
 }
 
-.photo1:hover{
-    scale: 110%;
+.photo1:hover {
+    scale: 110%; /* agrandit l’image de 10% au survol */
 }
 
-.photo2{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;   
+.photo2 {
+    grid-column-start: 2; /* commence dans la deuxième colonne */
+    grid-column-end: 3; /* finit avant la troisième colonne */
+    grid-row-start: 1; /* commence dans la première ligne */
+    grid-row-end: 2; /* finit avant la deuxième ligne */  
 }
 
-.photo2:hover{
-    scale: 110%;
+.photo2:hover {
+    scale: 110%; /* agrandit l’image de 10% au survol */
 }
 
-.photo3{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
+.photo3 {
+    grid-column-start: 3; /* commence dans la troisième colonne */
+    grid-column-end: 4; /* finit avant la quatrième colonne */
+    grid-row-start: 1; /* commence dans la première ligne */
+    grid-row-end: 2; /* finit avant la deuxième ligne */
 }
 
-.photo3:hover{
-    scale: 110%;
+.photo3:hover {
+    scale: 110%; /* agrandit l’image de 10% au survol */
 }
 
-.texte-tel-1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row: 2/3;
-    
+.texte-tel-1 {
+    grid-column-start: 1; /* place le texte sous la première image dans la première colonne */
+    grid-column-end: 2; /* finit avant la deuxième colonne */
+    grid-row: 2/3; /* place le texte dans la deuxième ligne */
 }
 
-.texte-tel-2{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+.texte-tel-2 {
+    grid-column-start: 2; /* place le texte sous la deuxième image dans la deuxième colonne */
+    grid-column-end: 3; /* finit avant la troisième colonne */
+    grid-row-start: 2; /* commence dans la deuxième ligne */
+    grid-row-end: 3; /* finit avant la troisième ligne */
 }
 
-.texte-tel-3{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
+.texte-tel-3 {
+    grid-column-start: 3; /* place le texte sous la troisième image dans la troisième colonne */
+    grid-column-end: 4; /* finit avant la quatrième colonne */
+    grid-row-start: 2; /* commence dans la deuxième ligne */
+    grid-row-end: 3; /* finit avant la troisième ligne */
 }

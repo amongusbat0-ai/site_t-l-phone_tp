@@ -23,7 +23,7 @@ body {
 
 
 .slides {
-    display: flex;
+    display: flex; /*Declare une grille */
     width: 400%; /* 4 images */
    animation: defilement 50s infinite linear;  /* Cette ligne lance l’animation nommée defilement, dure 50 secondes, tourne en boucle et avance à vitesse constante.*/ 
 }
